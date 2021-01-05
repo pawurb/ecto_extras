@@ -1,0 +1,2 @@
+defmodule EctoExtras do
+end
