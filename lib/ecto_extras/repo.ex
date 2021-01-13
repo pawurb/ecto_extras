@@ -8,9 +8,6 @@ defmodule EctoExtras.Repo do
   defmacro __using__(opts) do
     quote bind_quoted: [opts: opts] do
 
-      @doc """
-      Returns first object from the query result. By default ordered by the primary key.
-      """
       def first(queryable, order_by \\ nil)
 
       def first(queryable, order_by) do
@@ -82,4 +79,9 @@ defmodule EctoExtras.Repo do
       end
     end
   end
+
+  @doc """
+  Returns first object from the query result. By default ordered by the primary key.
+  """
+  @callback first(query :: Ecto.Queryable.t(), params :: keyword()) :: Ecto.Queryable.t()
 end
