@@ -1,7 +1,7 @@
 defmodule EctoExtras.Mixfile do
   use Mix.Project
   @github_url "https://github.com/pawurb/ecto_extras"
-  @version "0.0.1"
+  @version "0.1.1"
 
   def project do
     [
@@ -19,7 +19,6 @@ defmodule EctoExtras.Mixfile do
   def deps do
     [
       {:ecto_sql, "~> 3.4"},
-      {:ecto_explain, "0.1.2"},
       {:postgrex, ">= 0.15.7", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
@@ -27,7 +26,7 @@ defmodule EctoExtras.Mixfile do
 
   defp description do
     """
-    Ecto extra helper functions.
+    Ecto helper functions.
     """
   end
 

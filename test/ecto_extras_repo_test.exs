@@ -85,12 +85,12 @@ defmodule EctoExtrasRepoTest do
     assert TestRepo.count(User, :name) == 2
   end
 
-  test ".max" do
-    assert TestRepo.max(User, :age) == 32
-  end
-
   test ".min" do
     assert TestRepo.min(User, :age) == 18
+  end
+
+  test ".max" do
+    assert TestRepo.max(User, :age) == 32
   end
 
   test ".avg" do

@@ -5,7 +5,6 @@ defmodule EctoExtras.Repo do
 
   require Ecto.Query
 
-  @doc false
   defmacro __using__(opts) do
     quote bind_quoted: [opts: opts] do
 
