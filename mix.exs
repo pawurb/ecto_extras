@@ -1,7 +1,7 @@
 defmodule EctoExtras.Mixfile do
   use Mix.Project
   @github_url "https://github.com/pawurb/ecto_extras"
-  @version "0.1.2"
+  @version "0.1.3"
 
   def project do
     [
